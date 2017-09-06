@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  background-color: #e30d40;
+  color: white;
+  padding: 3px 10px;
+  position: relative;
+}
+
+.title button {
+  position: absolute;
+  right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px 5px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.title button:hover {
+  background-color: #ccc;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.panel ul {
+  padding-left: 20px;
+}
+
+.panel ul li {
+  list-style: none;
+  padding: 3px 8px;
+  margin-right: 10%;
+  border-bottom: 1px dotted #eee;
+}
+
+.panel ul li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.panel ul li .author {
+  margin: 3px 10px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.panel ul li.empty {
+  font-size: 11px;
+  border: none;
+}
+
+.spinner {
+  margin: auto;
+  text-align: center;
+}
+
+.theme button {
+  border: 2px solid #666;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.theme button:hover {
+  background-color: #eee;
+}

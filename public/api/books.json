@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Harry Potter",
+    "author": {
+      "id": 11,
+      "name": "J. K. Rowling"
+    }
+  },
+  {
+    "id": 2,
+    "title": "The Chronicles of Narnia",
+    "author": {
+      "id": 12,
+      "name": "C. S. Lewis"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Foundation",
+    "author": {
+      "id": 13,
+      "name": "Isaac Asimov"
+    }
+  },
+  {
+    "id": 4,
+    "title": "The Hobbit",
+    "author": {
+      "id": 14,
+      "name": "J.R.R. Tolkien"
+    }
+  },
+  {
+    "id": 5,
+    "title": "The Lord of the Rings",
+    "author": {
+      "id": 14,
+      "name": "J.R.R. Tolkien"
+    }
+  }
+]
