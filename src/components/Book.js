@@ -15,7 +15,7 @@ Book.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  author: ownProps.book.author
+  author: state.authors[ownProps.book.author]
 });
 
 export default connect(mapStateToProps)(Book);

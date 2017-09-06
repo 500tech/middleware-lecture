@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import { fetchAuthors } from 'actions/authors';
 import PanelTitle from './common/PanelTitle';
 import List from 'components/common/List';
+import { getRequests } from 'reducers/ui';
 
-const Authors = ({ authors, fetchAuthors }) => (
+const Authors = ({ authors, fetchAuthors, pending }) => (
   <div>
     <PanelTitle title="Authors" callback={ fetchAuthors } />
 
     <List list={ authors }
+          pending={ pending }
           render={ item => <li key={ item.id }>{ item.name }</li> }
     />
   </div>
@@ -17,11 +19,13 @@ const Authors = ({ authors, fetchAuthors }) => (
 
 Authors.propTypes = {
   authors: PropTypes.array,
-  fetchAuthors: PropTypes.func.isRequired
+  fetchAuthors: PropTypes.func.isRequired,
+  pending: PropTypes.bool.isRequired
 };
 
 const mapStateToProps = state => ({
-  authors: state.authors
+  authors: Object.keys(state.authors).map(id => state.authors[id]),
+  pending: getRequests(state, 'authors') > 0
 });
 
 export default connect(mapStateToProps, { fetchAuthors })(Authors);
