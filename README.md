@@ -5,3 +5,4 @@ Sample Middleware project for the React Next 2017 talk by [Boris Dinkevich](http
     yarn
     yarn start
 
+> On windows you might need to run ```set NODE_ENV=src``` before running ```yarn start```
